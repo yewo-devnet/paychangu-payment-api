@@ -208,7 +208,7 @@ class PayChanguAPI:
         charge_id = self._generate_reference("mobile_payout")
         
         # Simple provider detection for Malawi
-        if mobile_number.startswith('088') or mobile_number.startswith('+26588'):
+        if mobile_number.startswith('09') or mobile_number.startswith('+2659'):
             bank_uuid = "e8d5fca0-e5ac-4714-a518-484be9011326"  # Airtel Money
         else:
             bank_uuid = "5e9946ae-76ed-43f5-ad59-63e09096006a"  # TNM Mpamba
